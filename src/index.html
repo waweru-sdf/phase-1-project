@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog page</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header id="main-header">
+ <h1>TOURIST MANAGER WEB-PAGE</h1>
+</header>
+  <section>
+    <header><h1>VISITED PLACES</h1></header>
+    <div id="post">
+        <form id="form-post" >
+          <label for="country">Country</label>
+       <input type="text" name="country" id="country">
+          <label for="imageurl">Image url for favorite memory</label>
+       <input type="url" name="image url" id="image url">
+          <label for="description">Describe favorite memory</label>
+       <textarea name="love" id="love"></textarea>
+        <button type="submit">Add to list</button>
+      </form>
+    </div>
+    <div id="post-list"></div>
+  </section>
+  <section>
+    <header><h1>FAVORITES AMONG THE PLACES I'VE VISITED</h1></header>
+    <div id="favorite">
+        <form id="favorites" >
+          <label for="country">Country</label>
+       <input type="text" name="country" id="country">
+          <label for="description">what i love about the country</label>
+       <textarea name="love" id="love"></textarea>
+        <button type="submit">Favorites</button>
+      </form>
+    </div>
+    <div id="favorites-list"></div>
+  </section>
+  <section>
+    <header><h1>PLACES I'D LOVE TO VISIT NEXT</h1></header>
+    <div id="to-go-to">
+        <form id="to-go-to-form" >
+          <label for="country">Country</label>
+       <input type="text" name="country" id="country">
+          <label for="imageurl">flag of the next country</label>
+       <input type="url" name="image url" id="image url">
+        <button type="submit">update-list</button>
+      </form>
+    </div>
+    <div id="to-go-to-list"></div>
+  </section>
+  <script src="./index.js"></script>
+</body>
+</html>
