@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TOURIST MANAGER</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./src/style.css" />
 </head>
 <body>
 <header id="main-header">
@@ -12,25 +12,26 @@
 </header>
   <section>
     <header><h1>VISITED PLACES</h1></header>
-    <div id="post">
+    <!-- <div id="post"> -->
         <form id="form-post" >
-          <label for="country">Country</label>
-       <input type="text" name="country" id="country">
+          <label for="visited-country">Country</label>
+       <input type="text" id="visited-country">
           <label for="imageurl">Image url for favorite memory</label>
-       <input type="url" name="image url" id="image url">
+       <input type="url" id="image-url">
           <label for="description">Describe favorite memory</label>
-       <textarea name="love" id="love"></textarea>
+       <textarea id="description"></textarea>
         <button type="submit">Add to list</button>
       </form>
+    <!-- </div> -->
+    <div id="post-list">
     </div>
-    <div id="post-list"></div>
   </section>
-  <section>
+  <!-- <section>
     <header><h1>FAVORITES AMONG THE PLACES I'VE VISITED</h1></header>
     <div id="favorite">
         <form id="favorites" >
           <label for="country">Country</label>
-       <input type="text" name="country" id="country">
+       <input type="text" name="country" id="favorite-country">
           <label for="description">what i love about the country</label>
        <textarea name="love" id="love"></textarea>
         <button type="submit">Favorites</button>
@@ -43,14 +44,14 @@
     <div id="to-go-to">
         <form id="to-go-to-form" >
           <label for="country">Country</label>
-       <input type="text" name="country" id="country">
+       <input type="text" name="country" id="to-visit-country">
           <label for="imageurl">flag of the next country</label>
-       <input type="url" name="image url" id="image url">
+       <input type="url" name="image url" id="visit-image">
         <button type="submit">update-list</button>
       </form>
-    </div>
-    <div id="to-go-to-list"></div>
-  </section>
-  <script src="./index.js"></script>
+    </div> -->
+    <!-- <div id="to-go-to-list"></div>
+  </section> -->
+  <script src="./src/index.js"></script>
 </body>
 </html>
