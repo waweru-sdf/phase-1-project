@@ -36,10 +36,29 @@ function getAllFavorites(){
         .then(res => res.json())
         .then(favoritesData => favoritesData.forEach(renderOneFavorite));
 }
+// fetch for my third object in db.json "later"
+function renderOnelater(later){
+    let latercard = document.createElement('div');
+    latercard.className = 'later-card';
+    latercard.innerHTML = `
+        <img src="${later.imageUrl}"/>
+        <div class="later">
+            <h2>${later.country}</h2>
+        </div>
+    `;
+    document.getElementById('to-go-to-list').appendChild(latercard);
+}
+
+function getAlllaters(){
+    fetch('http://localhost:3000/later')
+        .then(res => res.json())
+        .then(laterData => laterData.forEach(renderOnelater));
+}
 //DOM content gets loaded first
 document.addEventListener("DOMContentLoaded", function(){
     getAllPosts();
     getAllFavorites();
+    getAlllaters();
 });
 
 
