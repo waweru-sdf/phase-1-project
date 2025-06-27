@@ -13,6 +13,11 @@ FELIX WAWERU
 #### LIVE SITE
 Your site is live at https://waweru-sdf.github.io/phase-1-project/
 
+#### TECHNOLOGIES
++ html
++ css
++ java script
+
 #### FOR DEVELOPERS
 
 For developers whom would love to see the code 
