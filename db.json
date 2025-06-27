@@ -1,74 +1,99 @@
 {
- "post" :[
+  "post": [
     {
       "country": "Israel",
-      "imageUrl":"https://images.unsplash.com/photo-1556861321-b7a1e5b1c291?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGlzcmFlbHxlbnwwfHwwfHx8MA%3D%3D",
-      "description":"Got to visit the brown stairtsteps that looked really beautiful"
+      "imageUrl": "https://images.unsplash.com/photo-1556861321-b7a1e5b1c291?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGlzcmFlbHxlbnwwfHwwfHx8MA%3D%3D",
+      "description": "Got to visit the brown stairtsteps that looked really beautiful",
+      "id": "1"
     },
-      {
+    {
       "country": "Israel",
-      "imageUrl":"https://images.unsplash.com/photo-1556861321-b7a1e5b1c291?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGlzcmFlbHxlbnwwfHwwfHx8MA%3D%3D",
-      "description":"Got to visit the brown stairtsteps that looked really beautiful"
+      "imageUrl": "https://images.unsplash.com/photo-1556861321-b7a1e5b1c291?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGlzcmFlbHxlbnwwfHwwfHx8MA%3D%3D",
+      "description": "Got to visit the brown stairtsteps that looked really beautiful",
+      "id": "2"
     },
-      {
+    {
       "country": "Israel",
-      "imageUrl":"https://images.unsplash.com/photo-1556861321-b7a1e5b1c291?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGlzcmFlbHxlbnwwfHwwfHx8MA%3D%3D",
-      "description":"Got to visit the brown stairtsteps that looked really beautiful"
-    }, 
-     {
-      "country": "Israel",
-      "imageUrl":"https://images.unsplash.com/photo-1556861321-b7a1e5b1c291?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGlzcmFlbHxlbnwwfHwwfHx8MA%3D%3D",
-      "description":"Got to visit the brown stairtsteps that looked really beautiful"
+      "imageUrl": "https://images.unsplash.com/photo-1556861321-b7a1e5b1c291?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGlzcmFlbHxlbnwwfHwwfHx8MA%3D%3D",
+      "description": "Got to visit the brown stairtsteps that looked really beautiful",
+      "id": "3"
     },
-     {
+    {
       "country": "Israel",
-      "imageUrl":"https://images.unsplash.com/photo-1556861321-b7a1e5b1c291?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGlzcmFlbHxlbnwwfHwwfHx8MA%3D%3D",
-      "description":"Got to visit the brown stairtsteps that looked really beautiful"
+      "imageUrl": "https://images.unsplash.com/photo-1556861321-b7a1e5b1c291?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGlzcmFlbHxlbnwwfHwwfHx8MA%3D%3D",
+      "description": "Got to visit the brown stairtsteps that looked really beautiful",
+      "id": "4"
+    },
+    {
+      "country": "Israel",
+      "imageUrl": "https://images.unsplash.com/photo-1556861321-b7a1e5b1c291?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGlzcmFlbHxlbnwwfHwwfHx8MA%3D%3D",
+      "description": "Got to visit the brown stairtsteps that looked really beautiful",
+      "id": "5"
+    },
+    {
+      "id": "6",
+      "country": "Dubai",
+      "imageUrl": "https://images.unsplash.com/photo-1570887640193-f0fadabe8cc3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGR1YmFpaXxlbnwwfHwwfHx8MA%3D%3D",
+      "description": "got to see one of the tallest and most beautiful buildings in dubai"
     }
- ],
- "favorite" :[
-        {
-            "country":"kenya",
-            "What i love about the country":"How the genzs are united"
-        },
-
-         {
-            "country":"kenya",
-            "What i love about the country":"How the genzs are united"
-        }, 
-        {
-            "country":"kenya",
-            "What i love about the country":"How the genzs are united"
-        },
-         {
-            "country":"kenya",
-            "What i love about the country":"How the genzs are united"
-        }, 
-        {
-            "country":"kenya",
-            "What i love about the country":"How the genzs are united"
-        }
-    ],
-    "bucket-list": [
-        {
-            "country":"japan",
-            "imageUrl":"https://media.istockphoto.com/id/178137781/photo/flag-of-japan.webp?a=1&b=1&s=612x612&w=0&k=20&c=oPUnw4XEH3MQHj4CAP8WRVRB2ZdnZPzNRxTe2FkWl-s="
-        },
-         {
-            "country":"japan",
-            "imageUrl":"https://media.istockphoto.com/id/178137781/photo/flag-of-japan.webp?a=1&b=1&s=612x612&w=0&k=20&c=oPUnw4XEH3MQHj4CAP8WRVRB2ZdnZPzNRxTe2FkWl-s="
-        }, {
-            "country":"japan",
-            "imageUrl":"https://media.istockphoto.com/id/178137781/photo/flag-of-japan.webp?a=1&b=1&s=612x612&w=0&k=20&c=oPUnw4XEH3MQHj4CAP8WRVRB2ZdnZPzNRxTe2FkWl-s="
-        }, {
-            "country":"japan",
-            "imageUrl":"https://media.istockphoto.com/id/178137781/photo/flag-of-japan.webp?a=1&b=1&s=612x612&w=0&k=20&c=oPUnw4XEH3MQHj4CAP8WRVRB2ZdnZPzNRxTe2FkWl-s="
-        }, {
-            "country":"japan",
-            "imageUrl":"https://media.istockphoto.com/id/178137781/photo/flag-of-japan.webp?a=1&b=1&s=612x612&w=0&k=20&c=oPUnw4XEH3MQHj4CAP8WRVRB2ZdnZPzNRxTe2FkWl-s="
-        }, {
-            "country":"japan",
-            "imageUrl":"https://media.istockphoto.com/id/178137781/photo/flag-of-japan.webp?a=1&b=1&s=612x612&w=0&k=20&c=oPUnw4XEH3MQHj4CAP8WRVRB2ZdnZPzNRxTe2FkWl-s="
-        }
-    ]
+  ],
+  "favorite": [
+    {
+      "country": "kenya",
+      "What i love about the country": "How the genzs are united",
+      "id": "1"
+    },
+    {
+      "country": "kenya",
+      "What i love about the country": "How the genzs are united",
+      "id": "2"
+    },
+    {
+      "country": "kenya",
+      "What i love about the country": "How the genzs are united",
+      "id": "3"
+    },
+    {
+      "country": "kenya",
+      "What i love about the country": "How the genzs are united",
+      "id": "4"
+    },
+    {
+      "country": "kenya",
+      "What i love about the country": "How the genzs are united",
+      "id": "5"
+    }
+  ],
+  "bucket-list": [
+    {
+      "country": "japan",
+      "imageUrl": "https://media.istockphoto.com/id/178137781/photo/flag-of-japan.webp?a=1&b=1&s=612x612&w=0&k=20&c=oPUnw4XEH3MQHj4CAP8WRVRB2ZdnZPzNRxTe2FkWl-s=",
+      "id": "1"
+    },
+    {
+      "country": "japan",
+      "imageUrl": "https://media.istockphoto.com/id/178137781/photo/flag-of-japan.webp?a=1&b=1&s=612x612&w=0&k=20&c=oPUnw4XEH3MQHj4CAP8WRVRB2ZdnZPzNRxTe2FkWl-s=",
+      "id": "2"
+    },
+    {
+      "country": "japan",
+      "imageUrl": "https://media.istockphoto.com/id/178137781/photo/flag-of-japan.webp?a=1&b=1&s=612x612&w=0&k=20&c=oPUnw4XEH3MQHj4CAP8WRVRB2ZdnZPzNRxTe2FkWl-s=",
+      "id": "3"
+    },
+    {
+      "country": "japan",
+      "imageUrl": "https://media.istockphoto.com/id/178137781/photo/flag-of-japan.webp?a=1&b=1&s=612x612&w=0&k=20&c=oPUnw4XEH3MQHj4CAP8WRVRB2ZdnZPzNRxTe2FkWl-s=",
+      "id": "4"
+    },
+    {
+      "country": "japan",
+      "imageUrl": "https://media.istockphoto.com/id/178137781/photo/flag-of-japan.webp?a=1&b=1&s=612x612&w=0&k=20&c=oPUnw4XEH3MQHj4CAP8WRVRB2ZdnZPzNRxTe2FkWl-s=",
+      "id": "5"
+    },
+    {
+      "country": "japan",
+      "imageUrl": "https://media.istockphoto.com/id/178137781/photo/flag-of-japan.webp?a=1&b=1&s=612x612&w=0&k=20&c=oPUnw4XEH3MQHj4CAP8WRVRB2ZdnZPzNRxTe2FkWl-s=",
+      "id": "6"
+    }
+  ]
 }
