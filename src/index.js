@@ -24,8 +24,8 @@ function renderOneFavorite(favorite){
     favoriteCard.className = 'favorite-card';
     favoriteCard.innerHTML = `
         <div id="favorite-content">
-            <h3>${favorite.country}</h3>
-            <p>${favorite.description}</p>
+            <h3 id="h3">${favorite.country}</h3>
+            <p id="paragraph">${favorite.description}</p>
         </div>
     `;
     document.getElementById('favorites-list').appendChild(favoriteCard);
@@ -43,7 +43,7 @@ function renderOnelater(later){
     latercard.innerHTML = `
         <img src="${later.imageUrl}"/>
         <div class="later">
-            <h2>${later.country}</h2>
+            <h4>${later.country}</h4>
         </div>
     `;
     document.getElementById('to-go-to-list').appendChild(latercard);
@@ -54,64 +54,57 @@ function getAlllaters(){
         .then(res => res.json())
         .then(laterData => laterData.forEach(renderOnelater));
 }
-//DOM content gets loaded first
 document.addEventListener("DOMContentLoaded", function(){
     getAllPosts();
     getAllFavorites();
     getAlllaters();
-});
 
+    // ✅ Submit for "post"
+    document.getElementById('form-post').addEventListener('submit', function(e) {
+        e.preventDefault(); 
+        const newPost = {
+            country: document.getElementById('visited-country').value,
+            imageUrl: document.getElementById('image-url').value,
+            description: document.getElementById('description').value
+        };
+        fetch('http://localhost:3000/post', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(newPost)
+        })
+        .then(response => response.json())
+        .then(addedPost => renderOnePost(addedPost));
+    });
 
-//post for my first form
-document.getElementById('form-post').addEventListener('submit', function(e) {
-    e.preventDefault(); 
+    // ✅ Submit for "favorite"
+    document.getElementById('favorites').addEventListener('submit', function(e) {
+        e.preventDefault(); 
+        const newFavorite = {
+            country: document.getElementById('favorite-country').value,
+            description: document.getElementById('love').value
+        };
+        fetch('http://localhost:3000/favorite', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(newFavorite)
+        })
+        .then(response => response.json())
+        .then(addedFavorite => renderOneFavorite(addedFavorite));
+    });
 
-    const newPost = {
-        country: document.getElementById('visited-country').value,
-        imageUrl: document.getElementById('image-url').value,
-        description: document.getElementById('description').value
-    };
-
-    fetch('http://localhost:3000/post', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(newPost)
-    })
-    .then(response => response.json())
-    .then(addedPost => renderOnePost(addedPost));
-});
-
-//post for my second form
-document.getElementById('favorites').addEventListener('submit', function(e) {
-    e.preventDefault(); 
-
-    const newFavorite = {
-        country: document.getElementById('favorite-country').value,
-        description: document.getElementById('love').value
-    };
-
-    fetch('http://localhost:3000/favorite', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(newFavorite)
-    })
-    .then(response => response.json())
-    .then(addedFavorite => renderOneFavorite(addedFavorite));
-});
-
-//post for my third form
-document.getElementById('to-go-to-form').addEventListener('submit', function(e) {
-    e.preventDefault(); 
-
-    const newLater = {
-        country: document.getElementById('to-visit-country').value,
-        imageUrl: document.getElementById('visit-image').value,
-    };
-    fetch('http://localhost:3000/later', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(newLater)
-    })
-    .then(response => response.json())
-    .then(addedlater => renderOnelater(addedlater));
+    // ✅ Submit for "later"
+    document.getElementById('to-go-to-form').addEventListener('submit', function(e) {
+        e.preventDefault(); 
+        const newLater = {
+            country: document.getElementById('to-visit-country').value,
+            imageUrl: document.getElementById('visit-image').value,
+        };
+        fetch('http://localhost:3000/later', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(newLater)
+        })
+        .then(response => response.json())
+        .then(addedLater => renderOnelater(addedLater)); 
+    });
 });

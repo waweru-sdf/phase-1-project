@@ -14,11 +14,11 @@
     <header><h1>VISITED PLACES</h1></header>
         <form id="form-post" >
           <label for="visited-country">Country</label>
-       <input type="text" id="visited-country">
+       <input type="text" id="visited-country" required>
           <label for="imageurl">Image url for favorite memory</label>
-       <input type="url" id="image-url">
+       <input type="url" id="image-url" required>
           <label for="description">Describe favorite memory</label>
-       <textarea id="description"></textarea>
+       <textarea id="description" required></textarea>
         <button type="submit">Add to list</button>
       </form>
     <div id="post-list">
@@ -28,9 +28,9 @@
     <header><h1>FAVORITES AMONG THE PLACES I'VE VISITED</h1></header>
         <form id="favorites" >
           <label for="country">Country</label>
-       <input type="text" name="country" id="favorite-country">
+       <input type="text" name="country" id="favorite-country" required>
           <label for="love">what i love about the country</label>
-       <textarea name="love" id="love"></textarea>
+       <textarea name="love" id="love" required></textarea>
         <button type="submit">Favorites</button>
       </form>
     <div id="favorites-list"></div>
@@ -39,9 +39,9 @@
     <header><h1>PLACES I'D LOVE TO VISIT NEXT</h1></header>
         <form id="to-go-to-form" >
           <label for="country">Country</label>
-       <input type="text" name="country" id="to-visit-country">
+       <input type="text" name="country" id="to-visit-country" required>
           <label for="imageurl">flag of the next country</label>
-       <input type="url" name="image url" id="visit-image">
+       <input type="url" name="image url" id="visit-image" required>
         <button type="submit">update-list</button>
       </form>
     <div id="to-go-to-list"></div>

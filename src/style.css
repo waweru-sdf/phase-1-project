@@ -61,15 +61,69 @@ body{
 }
 .post-card img {
   width: 100%;
-  height: 200px;
+  height: 300px;
   object-fit: cover;
 }
 .post-card {
-  width: 300px;
+  width: 600px;
+  height:500px;
   border: 1px solid #ddd;
   border-radius: 12px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   overflow: hidden;
   background-color: #fff;
   transition: transform 0.2s;
+}
+#favorites-list{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5px;
+  gap:20px;
+
+}
+.favorite-card {
+  width: 600px;
+  height:200px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  overflow: hidden;
+  background-color: #fff;
+  transition: transform 0.2s;
+}
+
+
+#to-go-to-list{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5px;
+  gap:20px;
+
+}
+.later-card {
+  width: 600px;
+  height:360px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  overflow: hidden;
+  background-color: #fff;
+  transition: transform 0.2s;
+  display: flex;
+  flex-wrap: wrap;
+}
+.later-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+#h3{
+  font-size: 15px;
+  color: green;
+  font-weight: bold;
+}
+#paragraph{
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
 }
