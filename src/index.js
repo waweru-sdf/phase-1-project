@@ -98,3 +98,20 @@ document.getElementById('favorites').addEventListener('submit', function(e) {
     .then(response => response.json())
     .then(addedFavorite => renderOneFavorite(addedFavorite));
 });
+
+//post for my third form
+document.getElementById('to-go-to-form').addEventListener('submit', function(e) {
+    e.preventDefault(); 
+
+    const newLater = {
+        country: document.getElementById('to-visit-country').value,
+        imageUrl: document.getElementById('visit-image').value,
+    };
+    fetch('http://localhost:3000/later', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(newLater)
+    })
+    .then(response => response.json())
+    .then(addedlater => renderOnelater(addedlater));
+});
