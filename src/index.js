@@ -1,3 +1,4 @@
+//Fetch code for my first object on my db.json "post"
 function renderOnePost(post){
     let postcard = document.createElement('div');
     postcard.className = 'post-card';
@@ -17,11 +18,32 @@ function getAllPosts(){
         .then(postsData => postsData.forEach(renderOnePost));
 }
 
+//Fetch code for my second object on my db.json "favorite"
+function renderOneFavorite(favorite){
+    let favoriteCard = document.createElement('div');
+    favoriteCard.className = 'favorite-card';
+    favoriteCard.innerHTML = `
+        <div id="favorite-content">
+            <h3>${favorite.country}</h3>
+            <p>${favorite.description}</p>
+        </div>
+    `;
+    document.getElementById('favorites-list').appendChild(favoriteCard);
+}
+
+function getAllFavorites(){
+    fetch('http://localhost:3000/favorite')
+        .then(res => res.json())
+        .then(favoritesData => favoritesData.forEach(renderOneFavorite));
+}
+//DOM content gets loaded first
 document.addEventListener("DOMContentLoaded", function(){
     getAllPosts();
-    getAllFavorites(); // move both here
+    getAllFavorites();
 });
 
+
+//post for my first form
 document.getElementById('form-post').addEventListener('submit', function(e) {
     e.preventDefault(); 
 
@@ -40,20 +62,20 @@ document.getElementById('form-post').addEventListener('submit', function(e) {
     .then(addedPost => renderOnePost(addedPost));
 });
 
-function renderOneFavorite(favorite){
-    let favoriteCard = document.createElement('div');
-    favoriteCard.className = 'favorite-card';
-    favoriteCard.innerHTML = `
-        <div id="favorite-content">
-            <h3>${favorite.country}</h3>
-            <p>${favorite.whatILove}</p>
-        </div>
-    `;
-    document.getElementById('favorites-list').appendChild(favoriteCard);
-}
+//post for my second form
+document.getElementById('favorites').addEventListener('submit', function(e) {
+    e.preventDefault(); 
 
-function getAllFavorites(){
-    fetch('http://localhost:3000/favorite')
-        .then(res => res.json())
-        .then(favoritesData => favoritesData.forEach(renderOneFavorite));
-}
+    const newFavorite = {
+        country: document.getElementById('favorite-country').value,
+        description: document.getElementById('love').value
+    };
+
+    fetch('http://localhost:3000/favorite', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(newFavorite)
+    })
+    .then(response => response.json())
+    .then(addedFavorite => renderOneFavorite(addedFavorite));
+});
