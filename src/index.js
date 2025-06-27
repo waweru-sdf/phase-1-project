@@ -13,7 +13,7 @@ function renderOnePost(post){
 }
 
 function getAllPosts(){
-    fetch('http://localhost:3000/post')
+    fetch('https://phase-1-server.onrender.com/post')
         .then(res => res.json())
         .then(postsData => postsData.forEach(renderOnePost));
 }
@@ -32,7 +32,7 @@ function renderOneFavorite(favorite){
 }
 
 function getAllFavorites(){
-    fetch('http://localhost:3000/favorite')
+    fetch('https://phase-1-server.onrender.com/favorite')
         .then(res => res.json())
         .then(favoritesData => favoritesData.forEach(renderOneFavorite));
 }
@@ -50,7 +50,7 @@ function renderOnelater(later){
 }
 
 function getAlllaters(){
-    fetch('http://localhost:3000/later')
+    fetch('https://phase-1-server.onrender.com/later')
         .then(res => res.json())
         .then(laterData => laterData.forEach(renderOnelater));
 }
@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function(){
             imageUrl: document.getElementById('image-url').value,
             description: document.getElementById('description').value
         };
-        fetch('http://localhost:3000/post', {
+        fetch('https://phase-1-server.onrender.com/post', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(newPost)
@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function(){
             country: document.getElementById('favorite-country').value,
             description: document.getElementById('love').value
         };
-        fetch('http://localhost:3000/favorite', {
+        fetch('https://phase-1-server.onrender.com/favorite', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(newFavorite)
@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", function(){
             country: document.getElementById('to-visit-country').value,
             imageUrl: document.getElementById('visit-image').value,
         };
-        fetch('http://localhost:3000/later', {
+        fetch('https://phase-1-server.onrender.com/later', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(newLater)
