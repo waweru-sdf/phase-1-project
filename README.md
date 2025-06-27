@@ -11,6 +11,7 @@ FELIX WAWERU
 - Type a favorite country and a description of what they love about the country 
 - Type a country they'd love to visit with an image of the flag
 #### LIVE SITE
+Your site is live at https://waweru-sdf.github.io/phase-1-project/
 
 #### FOR DEVELOPERS
 
